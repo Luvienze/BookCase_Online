@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminBookEditActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu"
+            android:layout_width="@dimen/blockedUserMenuWidth"
+            android:layout_height="@dimen/blockedUserMenuHeight"
+            android:layout_marginStart="@dimen/blockedUserMargin"
+            android:layout_marginTop="@dimen/blockedUserMargin"
+            android:contentDescription="Menu"
+            style="@style/MenuButton"
+            app:cornerRadius="@dimen/blockedUserCornerRadius"
+            app:icon="@drawable/ic_right_arrow"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/dimenZero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/AdminBookImage"
+            android:layout_width="@dimen/adminBookAddImgWidth"
+            android:layout_height="@dimen/adminBookAddImgHeight"
+            style="@style/BookAddImage"
+            app:layout_constraintTop_toBottomOf="@id/btn_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/AdminBookAddInput"
+            android:layout_marginStart="@dimen/innerMargin"
+            android:layout_marginTop="@dimen/innerMargin"
+            app:srcCompat="@drawable/ic_image"
+            tools:srcCompat="@drawable/ic_image" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminBookAddInput"
+            android:layout_width="@dimen/adminBookAddTextWidth"
+            android:layout_height="@dimen/adminBookAddTextHeight"
+            android:layout_marginStart="@dimen/adminBookAddMarginStart"
+            android:layout_marginTop="@dimen/adminBookAddMarginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_AdminBookName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/kitap_ad"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminBookAddInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/adminBookAddMargin"
+            android:layout_marginEnd="@dimen/adminBookAddMargin"
+            android:layout_marginTop="@dimen/adminBOokAddMarginTopText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AdminBookAddInput5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_AdminBookISBN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isbn_kodu"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminBookAddInput3"
+            android:layout_width="@dimen/adminBookAddTextWidth"
+            android:layout_height="@dimen/adminBookAddTextHeight"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AdminBookAddInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_AdminBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/kitap_yazar"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminBookAddInput4"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/adminBookAddTextHeight"
+            android:layout_marginStart="@dimen/adminBookAddMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/AdminBookAddInput5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_AdminBookPages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sayfa"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminBookAddInput5"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/adminBookAddTextHeight"
+            android:layout_marginTop="@dimen/innerMargin"
+            android:layout_marginEnd="@dimen/adminBookAddMargin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/AdminBookAddInput4"
+            app:layout_constraintTop_toBottomOf="@+id/AdminBookAddInput3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_AdminBookCopies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/adet"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AdminBookAddInput6"
+            android:layout_width="260dp"
+            android:layout_height="@dimen/adminBookAddDescriptionHeight"
+            android:layout_marginTop="@dimen/adminBOokAddMarginTopText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AdminBookAddInput2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_AdminBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:hint="@string/aciklama"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/spinner_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/adminBookAddMargin"
+            android:layout_marginEnd="@dimen/adminBookAddMargin"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="@dimen/adminBOokAddMarginTopText"
+            android:drawableEnd="@drawable/ic_spinner_down"
+            android:drawableRight="@drawable/ic_spinner_down"
+            android:drawablePadding="@dimen/adminTextPadding"
+            android:gravity="center_vertical"
+            android:padding="@dimen/adminBOokAddMarginTopText"
+            android:text="@string/kategori"
+            style="@style/Kategori_Spinner"
+            app:layout_constraintBottom_toTopOf="@+id/btn_saveImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AdminBookAddInput6"/>
+
+        <Button
+            android:id="@+id/btn_saveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kaydet"
+            style="@style/Normal_button"
+            android:layout_marginTop="@dimen/innerMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_kategori" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/adminProgressBarWidth"
+            android:layout_height="@dimen/adminProgressBarHeight"
+            android:layout_weight="@dimen/adminProgressBarWeight"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/ng_slide"
+        style="@style/NavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/admin_menu"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

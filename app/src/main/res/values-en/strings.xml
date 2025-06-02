@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bookcase Online</string>
+    <!-- LOGIN & SIGNUP-->
+    <string name="lblLogin">Bookcase Online</string>
+    <string name="txtUsername">E-mail:</string>
+    <string name="txtPassword">Password:</string>
+    <string name="radioAdmin">Admin</string>
+    <string name="radioUser">User</string>
+    <string name="btnLogin">Log In</string>
+    <string name="lblSignup">Not a member yer ?</string>
+    <string name="lblToSignUp">Sign Up</string>
+    <string name="lblFooter">"@"Duzce University Computer Engineering</string>
+    <string name="txtFirstname">Firstname</string>
+    <string name="txtLastname">Lastname</string>
+    <string name="txtEmail">E-mail:</string>
+    <string name="txtPhoneNumber">Phone Number</string>
+    <string name="txtGender">Gender</string>
+    <string name="lblDate">Date of Birth</string>
+    <string name="radioBtnFemale">Female</string>
+    <string name="radioBtnMale">Male</string>
+    <string name="radioBtnOther">Other</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="lblGender">Gender</string>
+    <string name="lblRememberMe">Remember Me</string>
+    <!-- ERROR MESSAGE -->
+    <string name="validationText">This field must contain at least 3 chars!</string>
+    <string name="validationPassword">Password must contain at least 6 chars!</string>
+    <string name="validationEmpty">This field is required</string>
+    <string name="databaseError">An error has occurred during signing up</string>
+    <string name="authenticationError">An error has occurred due to authentication</string>
+    <string name="loggedIn">has logged in</string>
+    <string name="notLoggedIn">You have not been logged in!</string>
+    <string name="loginFailed">An error has occurred during log in</string>
+    <string name="categoryIsNull">Failed to get category…Please search again.</string>
+    <string name="checkEmptyFields">Please fill email and password fields…</string>
+    <string name="userBanned">You have been banned due to expiration date to return book. Please contact with administration
+    </string>
+    <string name="userBannedTitle">Access Denied</string>
+    <string name="userBannedOk">Okay</string>
+
+    <string name="txtSearch">Search Book</string>
+    <string name="cardViewLblTitleFirst">Location and Information</string>
+    <string name="cardViewLblLocation">Duzce University</string>
+    <string name="cardViewLblContact">Contact: (0380) 123 45 67</string>
+    <string name="cardViewLblTitleSecond">Working Hours</string>
+    <string name="cardViewLblWeekdays">Monday - Friday: 09:00 - 18:00</string>
+    <string name="cardViewLbLSaturday"> Saturday: 10:00 - 14:00"</string>
+    <string name="cardViewLblSunday">Sunday: Closed</string>
+
+    <!-- CONTENT DESCRIPTIONS-->
+    <string name="contentDescriptionOfBookIcon">Book Icon</string>
+    <string name="contentDescriptionOfAppIcon">Book Case Online</string>
+    <string name="contentDescriptionOfSearchIcon">Search Icon</string>
+    <string name="contentDescriptionOfCardViewFirst">Books Background Image</string>
+    <string name="contentDescriptionOfCardViewSecond">Libraries Background Image</string>
+    <string name="contentDescriptionOfReturn">Return Icon</string>
+    <string name="contentDescriptionOfFavoriteChecked">Unchecked Favorite Icon</string>
+    <string name="contentDescriptionOfFavoriteUnchecked">Checked Favorite Icon</string>
+
+    <!-- ITEM BOOK -->
+    <string name="itemBookTitle">Invalid Book Title</string>
+    <string name="itemBookAuthor">Invalid Author</string>
+    <string name="itemBookCategory">Invalid Category</string>
+    <string name="itemBookISBN">Invalid ISBN</string>
+
+    <string name="hint_searchBar">Search for find books…</string>
+
+    <!-- BUTTON ADD -->
+    <string name="btnAddToCart">Add to cart</string>
+    <!-- ITEM BOOK DETAIL -->
+    <string name="isbn">ISBN:</string>
+    <string name="title">Title:</string>
+    <string name="author">Author:</string>
+    <string name="category">Category:</string>
+    <string name="copies">Copies:</string>
+    <string name="pages">Page Number:</string>
+    <string name="description">Description:</string>
+    <!-- ITEM BOOK DETAIL INVALIDATIONS-->
+    <string name="invalidIsbn">Invalid ISBN</string>
+    <string name="invalidTitle">Invalid Title</string>
+    <string name="invalidAuthor">Invalid Author</string>
+    <string name="invalidCategory">Invalid Category</string>
+    <string name="invalidCopies">Invalid Copies</string>
+    <string name="invalidPages">Invalid Page Number</string>
+    <string name="invalidDescription">Invalid Description</string>
+    <!--CATEGORY -->
+    <string name="categoryName">Category Name</string>
+    <!-- BUTTON REMOVE-->
+    <string name="btnRemove">Remove</string>
+    <!-- CART -->
+    <string name="lblCategories">Categories</string>
+    <string name="lblCart">Cart</string>
+    <string name="lblCartTitle">Reserved Books</string>
+    <string name="cartQuantityError">Out of stock…Check copies</string>
+    <!-- ALERT DIALOG-->
+    <string name="alertDialogTitle">Do you want to continue?</string>
+    <string name="alertDialogMessage">You are about to log out. Do you want to continue?</string>
+    <string name="positiveButton">Exit</string>
+    <string name="negativeButton">Stay</string>
+    <string name="neutralButton">Cancel</string>
+    <string name="loggedOut">You have been logged out!</string>
+    <string name="stay">Logout has been canceled</string>
+    <!--RETURN BUTTON -->
+
+    <string name="btnRent">Add to cart</string>
+    <string name="btnOutOfStock">Out of stock</string>
+    <string name="lblBookAdded">Book has added to cart</string>
+    <string name="lblBookCouldntAdded">Book couldnt added to cart!.</string>
+    <string name="lblBookIsAlreadyInCart">Book has been already in the cart.</string>
+    <string name="lblBookRemoved">Book has been removed from the cart.</string>
+    <string name="lblOutOfSize">Only 3 pieces of books can be added.</string>
+    <string name="lblCartIsEmpty">Cart is empty, search for some books :)</string>
+    <string name="lblBooksHaveRented">Books are rented. Check date of end day to return books on your profile.</string>
+    <!-- ALERT DIALOG RENT-->
+    <string name="alertRentTitle">Books are rented :)</string>
+    <string name="alertRentMessage">Books are rented. Please check the return date of books on your profile. Have a good readings :)</string>
+    <string name="alertRentNegativeButton">Close</string>
+    <string name="emailNotFound">Email is not found!</string>
+    <string name="userIsNull">Could not find the user…Please log in.</string>
+    <string name="emailIsNullOrEmpty">Email is empty or null…</string>
+    <!-- ADMIN -->
+    <string name="kategori_seciniz_alani">Choose category. Enter for to see category list.</string>
+    <string name="userIsBlOCKED">Banned User!</string>
+    <!-- PROFILE-->
+    <string name="welcomeUser"> Welcome to profile!</string>
+    <string name="lblUsername">User</string>
+    <string name="lblEmail">E-mail</string>
+    <string name="lblMembershipStarted">Membership started at</string>
+    <string name="txtMembershipStarted">16.16.2020</string>
+    <!-- PROFILE BUTTONS -->
+    <string name="btnBookHistory">Past Books</string>
+    <string name="btnFavoriteBooks">Favorite Books</string>
+    <string name="btnReturnBooks">Borrowed Books</string>
+    <string name="btnLogout">Log Out</string>
+    <!-- PROFILE ERROR-->
+    <string name="cannotFindUser">An error has been occurred during fetch user!</string>
+    <!-- PROFILE FAVORITE BOOKS-->
+    <string name="profileCardLblTitle">Favorite Books</string>
+    <!-- PROFILE EDIT USER -->
+    <string name="hint.lblFirstName">Firstname:</string>
+    <string name="hint.lblLastname">Lastname:</string>
+    <string name="hint.lblProfileEmail">E-mail:</string>
+    <string name="hint.lblPhoneNumber">Phone number:</string>
+    <!-- PROFILE EDIT USER EMPTY FIELD -->
+    <string name="txtProfileFirstname">Invalid Firstname</string>
+    <string name="txtProfileLastname">Invalid Lastname</string>
+    <string name="txtProfileEmail">Invalid E-Mail</string>
+    <string name="txtProfilePhoneNumber">Invalid Phone Number</string>
+    <!-- PROFILE RENTED BOOKS-->
+    <string name="profileRentedBooksTitle">Borrowed Books</string>
+    <string name="profileRentedBookRentDate">Borrow Date:</string>
+    <string name="profileRentedBookReturnDate">Refund Date:</string>
+    <string name="returnBook">Refund</string>
+    <string name="rentBookSuccess">Book has been successfully refunded.</string>
+    <string name="rentBookFailed">Book could not refund.</string>
+    <string name="profileCardLblRentedBooks">Past Books</string>
+    <!-- EDIT USER -->
+    <string name="save">Save Changes</string>
+    <!-- ACCEPT BUTTON -->
+    <string name="acceptButton">Accept Cart</string>
+    <!-- ALERT DIALOG USER -->
+    <string name="userAlertDialogTitle">Your information is being updated</string>
+    <string name="userAlertDialogMessage">Do you want to save changes ?</string>
+    <string name="userAlertDialogError">Please be sure that all fields are filled!</string>
+    <string name="emailUpdateError">An error was occurred during saving email!</string>
+    <string name="passwordUpdateError">An error was occurred during saving password!</string>
+    <string name="userAlertDialogYes">Yes</string>
+    <string name="userAlertDialogNo">No</string>
+    <string name="savesChanges">Changes has been saved successfully.</string>
+    <string name="alert">Attention</string>
+    <string name="emptyFieldsError">Please all the fields.</string>
+    <!-- AI -->
+    <string name="hint.askAI">Ask Gemini AI</string>
+    <string name="bookFound">Book is found in database.</string>
+    <string name="bookNotFound">Book was not found in database.</string>
+    <string name="databaseErrorAI">Database Error</string>
+    <string name="askQuestion">Please as a question.</string>
+    <string name="aiError">An error was occurred. Please try again.</string>
+    <!-- ERROR -->
+    <string name="errorFetchBook">Failed to fetch book.</string>
+    <string name="errorFetchBookDetail">Failed to fetch book details.</string>
+    <string name="capsControl">This field must contains at least 3 chars!</string>
+    <string name="phoneControl">Please enter valid phone number!</string>
+    <string name="emailControl">Please enter valid e-mail!</string>
+    <string name="refundErrorTitle">Expiration Date of Refund</string>
+    <string name="refundErrorMessage">You cannot borrow any more books due to expiration date of returning books.</string>
+    <string name="themeIsChanges">Theme is changed</string>
+    <!-- SETTINGS -->
+    <string name="lblSettings">Settings</string>
+    <string name="selectTheme">Choose Theme</string>
+    <string name="version">version 1.1.0</string>
+    <string name="settingsIconText">Duzce University Computer Eng. Course Code:BM443 Library Application</string>
+    <!-- FAB -->
+    <string name="fabProfile">Profile</string>
+    <string name="fabFavorite">Favorites</string>
+    <string name="fabCart">Cart</string>
+    <string name="fabSettings">Settings</string>
+    <!-- ADMİN SAYFALARI-->
+    <string name="welcomeLogin">Welcome!</string>
+    <string name="yonetici_giris">Admin Login</string>
+    <string name="kullanici_giris">User Login</string>
+
+    <string name="kullanici_adi">Username</string>
+    <string name="sifre">Password</string>
+    <string name="beni_hatırla">Remember Me</string>
+    <string name="giris">Login</string>
+
+    <string name="kitaplik">Bookcase</string>
+    <string name="kitap_ekle">Add Book</string>
+    <string name="baglantilar">Connections</string>
+    <string name="kullanicilar">Users</string>
+    <string name="engellenenler">Blocked Users</string>
+    <string name="secenekler">Options</string>
+    <string name="ayarlar">Settings</string>
+    <string name="oturum">Log Out</string>
+    <string name="cikis">Exit</string>
+
+    <string name="kitap_ad">Name of the Book</string>
+    <string name="kitap_yazar">Author of the Book</string>
+    <string name="sayfa">Number of Pages</string>
+    <string name="adet">Copies</string>
+    <string name="isbn_kodu">ISBN Code</string>
+    <string name="aciklama">Description</string>
+    <string name="kategori">Choose Category</string>
+
+    <string name="uyarı">Warning</string>
+    <string name="tamam">Ok</string>
+    <string name="iptal">Cancel</string>
+    <string name="alart_dialog1">Please fill in all fields as requested.</string>
+
+    <string name="kaydet">Save</string>
+
+    <string name="edittext3">Must be at least 3 characters!</string>
+    <string name="edittext2">Must be at least 2 characters!</string>
+
+    <string name="dogum">Date of B:</string>
+    <string name="cinsiyet">Gender:</string>
+
+    <string name="Toast_engel1">User ban lifted.</string>
+    <string name="Toast_engel2">The user has been blocked.</string>
+
+    <string name="Toast_kitap_basarili">The book has been added successfully.</string>
+    <string name="Toast_hata">An error occurred.</string>
+
+    <string name="Toast_kitap_silindi">The book was deleted.</string>
+
+    <string name="hosgeldiniz">Welcome!</string>
+
+    <string name="Adminloginhata">Username or password is incorrect!</string>
+
+    <string name="alert_user_silme">Are you sure you want to perform this action?</string>
+
+    <string name="hesap_silindi">Your account has been deleted successfully.</string>
+
+    <string name="hesabimi_sil">Delete My Account</string>
+
+</resources>

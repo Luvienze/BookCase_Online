@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_list">
+        <item>Kadın</item>
+        <item>Erkek</item>
+        <item>Belirtmek istemiyorum</item>
+    </string-array>
+
+    <string-array name="category_list">
+        <item>Roman</item>
+        <item>Hikaye</item>
+        <item>Bilim-Kurgu</item>
+        <item>Fantastik</item>
+        <item>Macera</item>
+        <item>Şiir</item>
+        <item>Yazılım</item>
+        <item>Makale</item>
+        <item>Bilim</item>
+        <item>Çocuk</item>
+        <item>Tarih</item>
+        <item>Korku</item>
+        <item>Gizem</item>
+        <item>Java</item>
+    </string-array>
+
+    <string-array name="theme">
+        <item>Aydınlık</item>
+        <item>Koyu</item>
+        <item>Sistem Teması</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Türkçe 🇹🇷</item>
+        <item>English 🇬🇧</item>
+    </string-array>
+</resources>

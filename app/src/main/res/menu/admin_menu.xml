@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/snv_kitaplik"
+                android:title="@string/kitaplik"
+                android:icon="@drawable/ic_kitaplik"/>
+            <item
+                android:id="@+id/snv_kitapekle"
+                android:title="@string/kitap_ekle"
+                android:icon="@drawable/ic_kitapekle"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/baglantilar">
+        <menu>
+            <item
+                android:id="@+id/snv_users"
+                android:title="@string/kullanicilar"
+                android:icon="@drawable/ic_users"/>
+            <item
+                android:id="@+id/snv_blocked"
+                android:title="@string/engellenenler"
+                android:icon="@drawable/ic_blocked"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/secenekler">
+        <menu>
+            <item
+                android:id="@+id/snv_settings"
+                android:title="@string/ayarlar"
+                android:icon="@drawable/ic_settings"/>
+            <item
+                android:id="@+id/snv_logout"
+                android:title="@string/oturum"
+                android:icon="@drawable/ic_logout"/>
+            <item
+                android:id="@+id/snv_turnoff"
+                android:title="@string/cikis"
+                android:icon="@drawable/ic_turnoff"/>
+        </menu>
+    </item>
+
+</menu>

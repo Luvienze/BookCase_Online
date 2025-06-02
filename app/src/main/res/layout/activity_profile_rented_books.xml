@@ -1,0 +1,93 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/imgBtnReturn"
+        android:layout_width="@dimen/returnIconWidth"
+        android:layout_height="@dimen/returnIconHeight"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/profileReturnIconMargin"
+        app:srcCompat="@mipmap/ic_return_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfReturn"/>
+
+    <ImageView
+        android:id="@+id/lblAppIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profileAppIconHeight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appicon"
+        android:contentDescription="@string/contentDescriptionOfAppIcon"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profileCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rentedBookCardHeight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAppIcon"
+        app:cardElevation="@dimen/itemBookDetailCardElevation"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:cardMaxElevation="@dimen/itemBookDetailCardElevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        style="@style/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/favorite_unchecked"
+                android:layout_width="@dimen/favoriteWidth"
+                android:layout_height="@dimen/favoriteHeight"
+                android:contentDescription="@string/contentDescriptionOfFavoriteChecked"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@mipmap/ic_return_book_foreground"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/returnBookIconMargin"/>
+
+            <TextView
+                android:id="@+id/profileCardLblTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profileRentedBooksTitle"
+                android:textSize="@dimen/profileCardLblTitle"
+                app:layout_constraintLeft_toRightOf="@+id/favorite_unchecked"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/margin"
+                style="@style/textView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRentedBook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/favoriteBookRecyclerViewMarginTop"
+        app:layout_constraintTop_toTopOf="@+id/profileCardTitle"
+        android:clipToPadding="false"
+        style="@style/textView"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progressBarWidth"
+        android:layout_height="@dimen/progressBarHeight"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

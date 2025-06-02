@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bookcase Online</string>
+    <!-- LOGIN & SIGNUP-->
+    <string name="lblLogin">Bookcase Online</string>
+    <string name="txtUsername">E-posta:</string>
+    <string name="txtPassword">Şifre:</string>
+    <string name="radioAdmin">Admin</string>
+    <string name="radioUser">User</string>
+    <string name="btnLogin">Giriş Yap</string>
+    <string name="lblSignup">Üye değil misin ?</string>
+    <string name="lblToSignUp">Kayıt Ol</string>
+    <string name="lblFooter">"@"Düzce Üniversitesi Bilgisayar Mühendisliği</string>
+    <string name="txtFirstname">Ad</string>
+    <string name="txtLastname">Soyad</string>
+    <string name="txtEmail">E-posta:</string>
+    <string name="txtPhoneNumber">Telefon Numarası</string>
+    <string name="txtGender">Cinsiyet</string>
+    <string name="lblDate">Doğum Tarihi</string>
+    <string name="radioBtnFemale">Kadın</string>
+    <string name="radioBtnMale">Erkek</string>
+    <string name="radioBtnOther">Diğer</string>
+    <string name="btnSignUp">Kayıt Ol</string>
+    <string name="lblGender">Cinsiyet</string>
+    <string name="lblRememberMe">Beni Hatırla</string>
+    <!-- ERROR MESSAGE -->
+    <string name="validationText">Bu alan en az 3 karakterden oluşmalıdır!</string>
+    <string name="validationPassword">Şifre en az 6 karakterden oluşmalıdır!</string>
+    <string name="validationEmpty">Bu alan zorunlu!</string>
+    <string name="databaseError">Kayıt esnasında bir hata meydana geldi!</string>
+    <string name="authenticationError">Yetkilendirme sırasında bir hata meydana geldi!</string>
+    <string name="loggedIn">giriş yaptı</string>
+    <string name="notLoggedIn">Giriş yapılamadı!</string>
+    <string name="loginFailed">Giriş sırasında hata meydana geldi!</string>
+    <string name="categoryIsNull">Kategoriler yüklenemedi...Lütfen tekrar arayın.</string>
+    <string name="checkEmptyFields">Lütfen e-posta ve şifrenizi giriniz...</string>
+    <string name="userBanned">Kitap iadesi yapmadığınızdan dolayı hesabınız erişime kısıtlandı. Lütfen yönetim ile iletişime geçin.
+    </string>
+    <string name="userBannedTitle">İzinsiz Erişim</string>
+    <string name="userBannedOk">Tamam</string>
+
+    <string name="txtSearch">Kitap Ara</string>
+    <string name="cardViewLblTitleFirst">Konum ve Bilgi</string>
+    <string name="cardViewLblLocation">Düzce Üniversitesi Merkez Yerleşkesi</string>
+    <string name="cardViewLblContact">İletişim: (0380) 123 45 67</string>
+    <string name="cardViewLblTitleSecond">Çalışma Saatleri</string>
+    <string name="cardViewLblWeekdays">Pazartesi - Cuma: 09:00 - 18:00</string>
+    <string name="cardViewLbLSaturday">Cumartesi: 10:00 – 14:00"</string>
+    <string name="cardViewLblSunday">Pazar: Kapalı</string>
+
+    <!-- CONTENT DESCRIPTIONS-->
+    <string name="contentDescriptionOfBookIcon">Kitap İkonu</string>
+    <string name="contentDescriptionOfAppIcon">Book Case Online</string>
+    <string name="contentDescriptionOfSearchIcon">Arama İkonu</string>
+    <string name="contentDescriptionOfCardViewFirst">Kitap Arkaplan Resmi</string>
+    <string name="contentDescriptionOfCardViewSecond">Kitaplar Arkaplan Resmi</string>
+    <string name="contentDescriptionOfReturn">Dönüş İkonu</string>
+    <string name="contentDescriptionOfFavoriteChecked">Favorilenmemiş Kalp İkonu</string>
+    <string name="contentDescriptionOfFavoriteUnchecked">Favorilenmiş Kalp İkonu</string>
+
+    <!-- ITEM BOOK -->
+    <string name="itemBookTitle">Geçersiz Kitap Başlığı</string>
+    <string name="itemBookAuthor">Geçersiz Yazar</string>
+    <string name="itemBookCategory">Geçersiz Kategori</string>
+    <string name="itemBookISBN">Geçersiz ISBN</string>
+
+    <string name="hint_searchBar">Aramak için lütfen giriniz...</string>
+
+    <!-- BUTTON ADD -->
+    <string name="btnAddToCart">Sepete ekle</string>
+    <!-- ITEM BOOK DETAIL -->
+    <string name="isbn">ISBN:</string>
+    <string name="title">Başlık:</string>
+    <string name="author">Yazar:</string>
+    <string name="category">Kategori:</string>
+    <string name="copies">Kopya sayısı:</string>
+    <string name="pages">Sayfa sayısı:</string>
+    <string name="description">Açıklama:</string>
+    <!-- ITEM BOOK DETAIL INVALIDATIONS-->
+    <string name="invalidIsbn">Geçersiz ISBN</string>
+    <string name="invalidTitle">Geçersiz Kitap Başlığı</string>
+    <string name="invalidAuthor">Geçersiz Yazar</string>
+    <string name="invalidCategory">Geçersiz Kategori</string>
+    <string name="invalidCopies">Geçersiz Kopya Sayısı</string>
+    <string name="invalidPages">Geçersiz Sayfa Sayısı</string>
+    <string name="invalidDescription">Geçersiz Açıklama</string>
+    <!--CATEGORY -->
+    <string name="categoryName">Kategori Adı</string>
+    <!-- BUTTON REMOVE-->
+    <string name="btnRemove">Çıkart</string>
+    <!-- CART -->
+    <string name="lblCategories">Kategoriler</string>
+    <string name="lblCart">Sepet</string>
+    <string name="lblCartTitle">Sepetteki Kitaplar</string>
+    <string name="cartQuantityError">Stokta yok...Kopya sayısını kontrol edin.</string>
+    <!-- ALERT DIALOG-->
+    <string name="alertDialogTitle">Devam etmek istiyor musunuz?</string>
+    <string name="alertDialogMessage">Çıkış yapılıyor. İşleme devam etmek istiyor musunuz?</string>
+    <string name="positiveButton">Çık</string>
+    <string name="negativeButton">Kal</string>
+    <string name="neutralButton">İptal Et</string>
+    <string name="loggedOut">Çıkış yaptınız!</string>
+    <string name="stay">Çıkış iptal edildi</string>
+    <!--RETURN BUTTON -->
+    <dimen name="returnButtonMargin">3dp</dimen>
+    <dimen name="returnButtonMarginDetail">5dp</dimen>
+    <!-- ACCEPT BUTTON -->
+    <string name="acceptButton">Sepeti Onayla</string>
+
+    <string name="btnRent">Sepete ekle</string>
+    <string name="btnOutOfStock">Yetersiz stok</string>
+    <string name="lblBookAdded">Kitap sepete eklendi</string>
+    <string name="lblBookCouldntAdded">Kitap sepete eklenemedi...</string>
+    <string name="lblBookIsAlreadyInCart">Kitap zaten sepette...</string>
+    <string name="lblBookRemoved">Kitap sepetten çıkartıldı.</string>
+    <string name="lblOutOfSize">Sadece 3 adet kitap aynı anda kiralanabilir.</string>
+    <string name="lblCartIsEmpty">Sepetiniz boş, kitap arayabilirsiniz :)</string>
+    <string name="lblBooksHaveRented">Kitaplar kiralandı. Son teslim tarihini profilinizden kontrol edin.</string>
+    <!-- ALERT DIALOG RENT-->
+    <string name="alertRentTitle">Kitaplar kiralandı:)</string>
+    <string name="alertRentMessage">Kitaplar kiralandı. Son teslim tarihini profilinizden kontrol edin. İyi okumalar :)</string>
+    <string name="alertRentNegativeButton">Kapat</string>
+    <string name="emailNotFound">E-posta bulunamadı!</string>
+    <string name="userIsNull">Kullanıcı bulunamadı…Lütfen giriş yapın.</string>
+    <string name="emailIsNullOrEmpty">E-posta hatalı veya gönderilemedi…</string>
+    <!-- ADMIN -->
+    <string name="kategori_seciniz_alani">Kategori Seçiniz alanı. Seçenekler için dokunun.</string>
+    <string name="userIsBlOCKED">Engellenmiş Kullanıcı!</string>
+    <!-- PROFILE-->
+    <string name="welcomeUser"> Profile hoşgeldiniz!</string>
+    <string name="lblUsername">Kullanıcı</string>
+    <string name="lblEmail">E-posta</string>
+    <string name="lblMembershipStarted">Üyelik başlangıç tarihi</string>
+    <string name="txtMembershipStarted">16.16.2020</string>
+    <!-- PROFILE BUTTONS -->
+    <string name="btnBookHistory">Geçmiş Kitaplarım</string>
+    <string name="btnFavoriteBooks">Favori Kitaplarım</string>
+    <string name="btnReturnBooks">Kiralanan Kitaplar</string>
+    <string name="btnLogout">Çıkış Yap</string>
+    <!-- PROFILE ERROR-->
+    <string name="cannotFindUser">Kullanıcıyı yükleme esnasında hata meydana geldi!</string>
+    <!-- PROFILE FAVORITE BOOKS-->
+    <string name="profileCardLblTitle">Favori Kitaplarım</string>
+    <!-- PROFILE EDIT USER -->
+    <string name="hint.lblFirstName">Ad:</string>
+    <string name="hint.lblLastname">Soyad:</string>
+    <string name="hint.lblProfileEmail">E-posta:</string>
+    <string name="hint.lblPhoneNumber">Telefon numarası:</string>
+    <!-- PROFILE EDIT USER EMPTY FIELD -->
+    <string name="txtProfileFirstname">Geçersiz ad</string>
+    <string name="txtProfileLastname">Geçersiz soyad</string>
+    <string name="txtProfileEmail">Geçersiz e-posta</string>
+    <string name="txtProfilePhoneNumber">Geçersiz telefon numarası</string>
+    <!-- PROFILE RENTED BOOKS-->
+    <string name="profileRentedBooksTitle">Kiralanan Kitaplar</string>
+    <string name="profileRentedBookRentDate">Kiralama Tarihi:</string>
+    <string name="profileRentedBookReturnDate">İade Tarihi:</string>
+    <string name="returnBook">İade Et</string>
+    <string name="rentBookSuccess">Kitap başarılı bir şekilde iade edildi.</string>
+    <string name="rentBookFailed">Kitap iade edilemedi.</string>
+    <string name="profileCardLblRentedBooks">Geçmiş Kitaplarım</string>
+    <!-- EDIT USER -->
+    <string name="save">Değişiklikleri Kaydet</string>
+    <!-- ALERT DIALOG USER -->
+    <string name="userAlertDialogTitle">Bilgileriniz Güncelleniyor</string>
+    <string name="userAlertDialogMessage">Değişiklikleri kaydetmek istiyor musunuz?</string>
+    <string name="userAlertDialogError">Tüm alanların doldurulduğundan emin olun!</string>
+    <string name="emailUpdateError">E-posta kaydedilirken hata meydana geldi!</string>
+    <string name="passwordUpdateError">Şifre kaydedilirken hata meydana geldi!</string>
+    <string name="userAlertDialogYes">Evet</string>
+    <string name="userAlertDialogNo">Hayır</string>
+    <string name="savesChanges">Değişiklikler başarılı bir şekilde kaydedildi.</string>
+    <string name="alert">Uyarı</string>
+    <string name="emptyFieldsError">Lütfen tüm alanları uygun şekilde doldurunuz.</string>
+    <!-- AI -->
+    <string name="hint.askAI">Gemini AI sor</string>
+    <string name="bookFound">Kitap veritabanında bulunmakta.</string>
+    <string name="bookNotFound">Kitap veritabanında bulunmamakta.</string>
+    <string name="databaseErrorAI">Veritabanı hatasaı</string>
+    <string name="askQuestion">Lütfen bir soru girin.</string>
+    <string name="aiError">Bir hata oluştu. Lütfen tekrar deneyin.</string>
+    <!-- ERROR -->
+    <string name="errorFetchBook">Kitap yüklenemedi</string>
+    <string name="errorFetchBookDetail">Kitap detayları yüklenemedi</string>
+    <string name="capsControl">Bu alan en az 3 karakterden oluşmalı!</string>
+    <string name="phoneControl">Geçerli bir telefon numarası giriniz!</string>
+    <string name="emailControl">Geçerli bir mail giriniz!</string>
+    <string name="refundErrorTitle">İade Gecikmesi</string>
+    <string name="refundErrorMessage">İade süresi geçmiş kitabınız bulunduğu için şu an kiralama işlemi yapamazsınız.</string>
+    <string name="themeIsChanges">Tema değiştirildi</string>
+    <!-- SETTINGS -->
+    <string name="lblSettings">Ayarlar</string>
+    <string name="selectTheme">Tema Seçin</string>
+    <string name="version">version 1.1.0</string>
+    <string name="settingsIconText">Düzce Üniversitesi Bilgisayar Müh. BM443 Dersi İçin Geliştirilen Proje Uygulaması</string>
+    <!-- FAB -->
+    <string name="fabProfile">Profil</string>
+    <string name="fabFavorite">Favoriler</string>
+    <string name="fabCart">Sepet</string>
+    <string name="fabSettings">Ayarlar</string>
+    <!-- ADMİN SAYFALARI-->
+    <string name="welcomeLogin">Hoşgeldiniz!</string>
+    <string name="yonetici_giris">Yönetici Girişi</string>
+    <string name="kullanici_giris">Kullanıcı Girişi</string>
+
+    <string name="kullanici_adi">Kullanıcı Adı</string>
+    <string name="sifre">Şifre</string>
+    <string name="beni_hatırla">Beni hatırla</string>
+    <string name="giris">Giriş</string>
+
+    <string name="kitaplik">Kitaplık</string>
+    <string name="kitap_ekle">Kitap Ekle</string>
+    <string name="baglantilar">Bağlantılar</string>
+    <string name="kullanicilar">Kullanıcılar</string>
+    <string name="engellenenler">Engellenenler</string>
+    <string name="secenekler">Seçenekler</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="oturum">Oturumu Kapat</string>
+    <string name="cikis">Çıkış</string>
+
+    <string name="kitap_ad">Kitap Adı</string>
+    <string name="kitap_yazar">Kitabın Yazarı</string>
+    <string name="sayfa">Sayfa Sayısı</string>
+    <string name="adet">Adet</string>
+    <string name="isbn_kodu">ISBN Kodu</string>
+    <string name="aciklama">Kitabın Açıklaması</string>
+    <string name="kategori">Kategori Seçin</string>
+
+    <string name="uyarı">Uyarı</string>
+    <string name="tamam">Tamam</string>
+    <string name="iptal">İptal</string>
+    <string name="alart_dialog1">Lütfen tüm alanları istenen şekilde doldurunuz.</string>
+
+    <string name="kaydet">Kaydet</string>
+
+    <string name="edittext3">En az 3 karakter olmalı!</string>
+    <string name="edittext2">En az 2 karakter olmalı!</string>
+
+    <string name="dogum">Doğum T:</string>
+    <string name="cinsiyet">Cinsiyet:</string>
+
+    <string name="Toast_engel1">Kullanıcı engeli kaldırıldı.</string>
+    <string name="Toast_engel2">Kullanıcı engellendi.</string>
+
+    <string name="Toast_kitap_basarili">Kitap başarıyla eklendi.</string>
+    <string name="Toast_hata">Bir hata oluştu.</string>
+
+    <string name="Toast_kitap_silindi">Kitap silindi.</string>
+
+    <string name="hosgeldiniz">Hoşgeldiniz!</string>
+
+    <string name="Adminloginhata">Kullanıcı adı veya şifre hatalı!</string>
+
+    <string name="alert_user_silme">Bu işlemi yapmak istediğinizden emin misiniz?</string>
+
+    <string name="hesap_silindi">Hesabınız başarıyla silindi.</string>
+
+    <string name="hesabimi_sil">Hesabımı Sil</string>
+</resources>

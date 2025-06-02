@@ -1,0 +1,137 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/itemBookLayoutPadding">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bookListCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/itemBookCardElevation"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:cardMaxElevation="@dimen/itemBookCardElevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        style="@style/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bookCardImg"
+                android:layout_width="@dimen/itemBookImageWidth"
+                android:layout_height="@dimen/itemBookImageHeight"
+                android:layout_marginTop="@dimen/innerMarginTop"
+                android:layout_marginBottom="@dimen/innerMarginTop"
+                android:layout_marginStart="@dimen/innerMargin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/bookCardTitle"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bookCardImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/innerMargin"
+                android:layout_marginTop="@dimen/itemBookTextMarginTop"
+                android:text="@string/itemBookTitle"
+                android:textSize="@dimen/itemBookTitleTextSize"
+                android:maxLines="2"
+                android:lineSpacingExtra="2dp"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/bookCardAuthor"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardTitle"
+                app:layout_constraintLeft_toRightOf="@+id/bookCardImg"
+                android:layout_marginStart="@dimen/innerMargin"
+                android:layout_marginTop="@dimen/itemBookMarginTop"
+                android:text="@string/itemBookTitle"
+                android:textSize="@dimen/cardTextSize"
+                style="@style/textView"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/bookCardCategory"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardAuthor"
+                app:layout_constraintLeft_toRightOf="@+id/bookCardImg"
+                android:layout_marginStart="@dimen/innerMargin"
+                android:layout_marginTop="@dimen/itemBookMarginTop"
+                android:text="@string/itemBookCategory"
+                android:textSize="@dimen/cardTextSize"
+                style="@style/textView"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/bookCardISBN"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardCategory"
+                app:layout_constraintLeft_toRightOf="@+id/bookCardImg"
+                android:layout_marginStart="@dimen/innerMargin"
+                android:layout_marginTop="@dimen/itemBookMarginTop"
+                android:text="@string/itemBookISBN"
+                android:textSize="@dimen/itemBookISBNTextSize"
+                style="@style/textView"
+                android:ellipsize="end"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/bookCardImg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/btnMarginBottom"
+                android:layout_marginStart="@dimen/margin"
+                android:text="@string/btnAddToCart"
+                style="@style/AddBookButton" />
+
+            <ImageButton
+                android:id="@+id/favorite_unchecked"
+                android:layout_width="@dimen/favoriteWidth"
+                android:layout_height="@dimen/favoriteHeight"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/marginTop"
+                android:contentDescription="@string/contentDescriptionOfFavoriteUnchecked"
+                app:layout_constraintLeft_toRightOf="@+id/btnAddToCart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="@dimen/margin"
+                style="@style/cardView"
+                app:srcCompat="@mipmap/ic_favorite_unchecked_foreground"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginBottom="@dimen/favorite_ItemBook"
+                android:visibility="visible"/>
+
+            <ImageButton
+                android:id="@+id/favorite_checked"
+                android:layout_width="@dimen/favoriteWidth"
+                android:layout_height="@dimen/favoriteHeight"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/marginTop"
+                android:contentDescription="@string/contentDescriptionOfFavoriteChecked"
+                app:layout_constraintLeft_toRightOf="@+id/btnAddToCart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@mipmap/ic_favorite_checked_foreground"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginEnd="@dimen/margin"
+                android:layout_marginBottom="@dimen/favorite_ItemBook"
+                android:visibility="invisible"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

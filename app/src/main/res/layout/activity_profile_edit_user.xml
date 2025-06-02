@@ -1,0 +1,235 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/margin"
+    >
+
+    <ImageButton
+        android:id="@+id/imgBtnReturn"
+        android:layout_width="@dimen/returnIconWidth"
+        android:layout_height="@dimen/returnIconHeight"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/profileReturnIconMargin"
+        app:srcCompat="@mipmap/ic_return_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfReturn"/>
+
+    <ImageView
+        android:id="@+id/lblAppIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profileAppIconHeight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appicon"
+        android:contentDescription="@string/contentDescriptionOfAppIcon"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profileFirstNameLayout"
+        android:layout_width="@dimen/profileEditTextWidth"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lblAppIcon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileEditTextFirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.lblFirstName"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profileLastnameLayout"
+        android:layout_width="@dimen/profileEditTextWidth"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileFirstNameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileEditTextLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.lblLastname"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profileEmailLayout"
+        android:layout_width="@dimen/profileEditTextWidth"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileLastnameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileEditTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.lblProfileEmail"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/profilePhoneLayout"
+        android:layout_width="@dimen/profileEditTextWidth"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmailLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileEditTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.lblPhoneNumber"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profileGenderCard"
+        android:layout_width="@dimen/profileEditTextWidth"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profilePhoneLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin"
+        style="@style/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/innerMargin">
+
+            <TextView
+                android:id="@+id/lblGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtGender"
+                style="@style/textView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupAuth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/lblGender"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/innerMargin">
+
+                <RadioButton
+                    android:id="@+id/radioBtnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioBtnFemale"
+                    style="@style/textView"/>
+
+                <RadioButton
+                    android:id="@+id/radioBtnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioBtnMale"
+                    android:layout_marginStart="@dimen/innerMargin"
+                    android:layout_marginEnd="@dimen/innerMargin"
+                    style="@style/textView"/>
+
+                <RadioButton
+                    android:id="@+id/radioBtnOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioBtnOther"
+                    style="@style/textView"/>
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signupPasswordLayout"
+        android:layout_width="@dimen/profileEditTextWidth"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:errorIconDrawable="@null"
+        app:layout_constraintTop_toBottomOf="@+id/profileGenderCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_margin="@dimen/margin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtPassword"
+            android:inputType="textVisiblePassword"
+            style="@style/textView">
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDate"
+        android:layout_marginTop="@dimen/innerMarginTop"
+        android:layout_marginStart="@dimen/profileDateMargin"
+        app:layout_constraintTop_toBottomOf="@id/signupPasswordLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        style="@style/textView"/>
+
+    <DatePicker
+        android:id="@+id/datePickerDates"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/datePicker"
+        android:layout_marginEnd="@dimen/innerMargin"
+        android:layout_marginStart="@dimen/innerMargin"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:spinnersShown="true"
+        app:layout_constraintTop_toBottomOf="@id/lblDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="@dimen/innerMarginTop"
+        android:layout_marginEnd="@dimen/innerMargin"
+        android:layout_marginStart="@dimen/innerMargin"
+        app:layout_constraintTop_toBottomOf="@+id/datePickerDates"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/SubmitButton"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progressBarWidth"
+        android:layout_height="@dimen/progressBarHeight"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

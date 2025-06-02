@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminLoginActivity">
+
+    <ImageButton
+        android:id="@+id/imgBtnReturn"
+        android:layout_width="@dimen/returnIconWidth"
+        android:layout_height="@dimen/returnIconHeight"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/returnButtonMargin"
+        app:srcCompat="@mipmap/ic_return_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfReturn"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/adminLoginImgWidth"
+        android:layout_height="@dimen/adminLoginImgHeight"
+        android:layout_marginTop="@dimen/adminLoginMarginTop"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AdminLoginInput"
+        android:layout_width="@dimen/adminLoginTextWidth"
+        android:layout_height="@dimen/adminLoginTextHeight"
+        android:layout_marginTop="@dimen/adminLoginTextMarginTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kullanici_adi"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="@dimen/adminLoginTextWidth"
+        android:layout_height="@dimen/adminLoginTextHeight"
+        android:layout_marginTop="@dimen/adminLoginTextPasswordMarginTop"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminLoginInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sifre"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/adminLoginButtonMarginTop"
+        style="@style/TextColorBlack"
+        android:text="@string/giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
+
+    <CheckBox
+        android:id="@+id/checkBox_remamberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/adminLoginCheckBoxMargin"
+        android:text="@string/beni_hatırla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/adminLoginLblMarginTop"
+        android:text="@string/yonetici_giris"
+        android:textSize="@dimen/adminLoginLblTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

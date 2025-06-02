@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminUsersActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu"
+            android:layout_width="@dimen/blockedUserMenuWidth"
+            android:layout_height="@dimen/blockedUserMenuHeight"
+            android:layout_marginStart="@dimen/blockedUserMargin"
+            android:layout_marginTop="@dimen/blockedUserMargin"
+            android:contentDescription="Menu"
+            style="@style/MenuButton"
+            android:text=""
+            app:cornerRadius="@dimen/blockedUserCornerRadius"
+            app:icon="@drawable/ic_right_arrow"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/dimenZero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/blockedUserMarginTop"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="Recycler View"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/AdminUsersSearch"
+            android:layout_width="@dimen/searchViewWidth"
+            android:layout_height="@dimen/searchViewHeight"
+            android:layout_marginTop="@dimen/blockedUserMargin"
+            android:layout_marginEnd="@dimen/blockedUserPadding"
+            android:background="@drawable/spinner"
+            android:theme="@style/SearchViewStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/adminProgressBarWidth"
+            android:layout_height="@dimen/adminProgressBarHeight"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/ng_slide"
+        style="@style/NavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/admin_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

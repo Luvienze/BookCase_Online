@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imgBtnReturn"
+        android:layout_width="@dimen/returnIconWidth"
+        android:layout_height="@dimen/returnIconHeight"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/returnButtonMargin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_return_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfReturn"/>
+
+    <ImageView
+        android:id="@+id/lblAppIcon"
+        android:layout_width="@dimen/appIconWidth"
+        android:layout_height="@dimen/appIconHeight"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnReturn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layoutSearch"
+        android:layout_marginStart="@dimen/innerMargin"
+        app:srcCompat="@drawable/appicon"
+        android:contentDescription="@string/contentDescriptionOfAppIcon"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAppIcon"
+        app:layout_constraintRight_toLeftOf="@+id/imgBtnSearch"
+        android:layout_marginEnd="@dimen/searchBoxGapWithBtn"
+        android:hint="@string/txtSearch"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:boxCornerRadiusTopStart="@dimen/boxCornerRadiusTopStart"
+        app:boxCornerRadiusBottomStart="@dimen/boxCornerRadiusTopStart"
+        app:boxCornerRadiusBottomEnd="@dimen/boxCornerRadiusBottomEnd"
+        app:boxCornerRadiusTopEnd="@dimen/boxCornerRadiusTopEnd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/editInputTextMinHeight"
+            android:paddingTop="@dimen/editInputTextPadding"
+            android:paddingBottom="@dimen/editInputTextPadding"
+            android:backgroundTint="@color/white"
+            style="TextColorSearchBar"
+            android:inputType="textCapSentences">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtnSearch"
+        android:layout_width="@dimen/searchIconWidth"
+        android:layout_height="@dimen/searchIconHeight"
+        android:layout_marginEnd="@dimen/innerMargin"
+        android:layout_marginTop="@dimen/marginTop"
+        style="@style/SearchIcon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblAppIcon"
+        app:srcCompat="@mipmap/ic_search_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfSearchIcon"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCategories"
+        app:layout_constraintTop_toBottomOf="@id/imgBtnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerMarginTop"
+        android:paddingStart="@dimen/recyclerViewPadding"
+        android:paddingEnd="@dimen/recyclerViewPadding"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:clipToPadding="false"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBookList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/recyclerViewMargin"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/recyclerViewPadding"
+        app:layout_constraintTop_toBottomOf="@id/layoutSearch"
+        tools:layout_editor_absoluteX="@dimen/layoutEditor" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu_colorNormal="@color/primary"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_colorPressed="@color/blue"
+        android:elevation="10dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabProfile"
+            app:fab_colorPressed="@color/blue"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabFavourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorite"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabFavorite"
+            app:fab_colorPressed="@color/blue"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabCart"
+            app:fab_colorPressed="@color/blue"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabSettings"
+            app:fab_colorPressed="@color/blue"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

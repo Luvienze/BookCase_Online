@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/innerMarginTop"
+    android:layout_marginBottom="@dimen/marginBottom"
+    android:layout_marginEnd="@dimen/margin"
+    android:layout_marginStart="@dimen/margin">
+
+    <ImageButton
+        android:id="@+id/imgBtnReturn"
+        android:layout_width="@dimen/returnIconWidth"
+        android:layout_height="@dimen/returnIconHeight"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/returnButtonMargin"
+        app:srcCompat="@mipmap/ic_return_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfReturn"/>
+
+    <ImageView
+        android:id="@+id/loginBookImg"
+        android:layout_width="@dimen/loginBookIconWidth"
+        android:layout_height="@dimen/loginBookIconHeight"
+        android:src="@drawable/wp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/innerMarginTop"
+        android:contentDescription="@string/contentDescriptionOfBookIcon"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBookImg"
+        android:layout_marginEnd="@dimen/innerMargin"
+        android:layout_marginStart="@dimen/innerMargin"
+        android:layout_marginTop="@dimen/loginGapBetweenImage">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtEmail"
+            android:inputType="textCapWords"
+            android:backgroundTint="@color/white">
+            <requestFocus/>
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameLayout"
+        android:layout_marginEnd="@dimen/innerMargin"
+        android:layout_marginStart="@dimen/innerMargin"
+        android:layout_marginTop="@dimen/innerMarginTop"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtPassword"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="@dimen/margin"/>
+
+    <TextView
+        android:id="@+id/lblRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/checkBoxRememberMe"
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
+        android:layout_marginTop="@dimen/loginTextViewMarginTop"
+        android:text="@string/lblRememberMe"
+        style="@style/textView" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/loginButtonWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLogin"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="@dimen/innerMargin"
+        android:layout_marginStart="@dimen/innerMargin"
+        style="@style/LoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRememberMe"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblSignup"
+        style="@style/textView"
+        android:textAlignment="viewStart"
+        android:layout_marginEnd="@dimen/innerMargin"
+        android:layout_marginTop="@dimen/loginTextViewMarginTop"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/lblToSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblToSignUp"
+        style="@style/signUpTextView"
+        android:textAlignment="viewStart"
+        android:layout_marginEnd="@dimen/innerMargin"
+        app:layout_constraintTop_toBottomOf="@id/lblSignup"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFooter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:textAlignment="center"
+        style="@style/footer"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

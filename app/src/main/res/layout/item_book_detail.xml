@@ -1,0 +1,337 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imgBtnReturn"
+        android:layout_width="@dimen/returnIconWidth"
+        android:layout_height="@dimen/returnIconHeight"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/returnButtonMarginDetail"
+        app:srcCompat="@mipmap/ic_return_foreground"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/contentDescriptionOfReturn"/>
+
+    <!-- Book Image Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemBookDetailCardImage"
+        android:layout_width="@dimen/itemBookDetailWidth"
+        android:layout_height="@dimen/itemBookDetailHeight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/marginTop"
+        app:cardElevation="@dimen/itemBookDetailCardElevation"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        style="@style/cardView"
+        app:cardMaxElevation="@dimen/itemBookDetailCardElevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/itemBookDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Detail Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemDetailCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/itemBookDetailCardImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:padding="@dimen/itemBookDetailCardTextPadding"
+        style="@style/cardView"
+        app:cardElevation="@dimen/itemBookDetailCardElevation"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:cardMaxElevation="@dimen/itemBookDetailCardElevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/itemBookDetailCardPadding">
+
+            <!-- ISBN -->
+            <TextView
+                android:id="@+id/itemBookDetailISBN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/isbn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+
+            <TextView
+                android:id="@+id/itemBookDetailISBNTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidIsbn"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailISBN"
+                style="@style/textView"
+                 />
+
+            <ImageButton
+                android:id="@+id/favorite_unchecked"
+                android:layout_width="@dimen/favoriteWidth"
+                android:layout_height="@dimen/favoriteHeight"
+                android:contentDescription="@string/contentDescriptionOfFavoriteUnchecked"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/cardView"
+                app:srcCompat="@mipmap/ic_favorite_unchecked_foreground"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginBottom="@dimen/favorite_ItemBook"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/favorite_checked"
+                android:layout_width="@dimen/favoriteWidth"
+                android:layout_height="@dimen/favoriteHeight"
+                android:layout_marginStart="@dimen/margin"
+                android:contentDescription="@string/contentDescriptionOfFavoriteChecked"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:srcCompat="@mipmap/ic_favorite_checked_foreground"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginBottom="@dimen/favorite_ItemBook"
+                android:visibility="invisible"
+                style="@style/textView"/>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/itemBookDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailISBN"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/itemBookDetailTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidTitle"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailISBNTxt"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailTitle"
+                style="@style/textView" />
+
+            <!-- Author -->
+            <TextView
+                android:id="@+id/itemBookDetailAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/author"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/itemBookDetailAuthorTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidAuthor"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailTitleTxt"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailAuthor"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/textView"/>
+
+            <!-- Category -->
+            <TextView
+                android:id="@+id/itemBookDetailCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailAuthor"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/itemBookDetailCategoryTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidCategory"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailAuthorTxt"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailCategory"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/textView"/>
+
+            <!-- Copies -->
+            <TextView
+                android:id="@+id/itemBookDetailCopiesAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copies"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailCategoryTxt"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/itemBookDetailCopiesTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidCopies"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailCategoryTxt"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailCopiesAvailable"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/textView"/>
+
+            <!-- Pages -->
+            <TextView
+                android:id="@+id/itemBookDetailPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pages"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailCopiesAvailable"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/itemBookDetailPagesTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidPages"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailCopiesTxt"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailPages"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/textView"/>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/itemBookDetailDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailPages"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/itemBookDetailDescriptionTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/invalidDescription"
+                android:layout_marginStart="@dimen/itemBookDetailMargin"
+                android:layout_marginTop="@dimen/itemBookDetailMargin"
+                app:layout_constraintTop_toBottomOf="@id/itemBookDetailPagesTxt"
+                app:layout_constraintStart_toEndOf="@id/itemBookDetailDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/marginBottom"
+                style="@style/textView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Rent Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/itemBookDetailRentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:text="@string/btnAddToCart"
+        style="@style/AddBookButton"
+        app:layout_constraintTop_toBottomOf="@id/itemDetailCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/lblFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFooter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/marginBottom"
+        style="@style/footer"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu_colorNormal="@color/primary"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_colorPressed="@color/blue"
+        android:elevation="10dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabProfile"
+            app:fab_colorPressed="@color/blue"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabFavourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorite"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabFavorite"
+            app:fab_colorPressed="@color/blue"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabCart"
+            app:fab_colorPressed="@color/blue"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            fab:fab_colorNormal="@color/primary"
+            fab:fab_size="mini"
+            fab:fab_label="@string/fabSettings"
+            app:fab_colorPressed="@color/blue"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

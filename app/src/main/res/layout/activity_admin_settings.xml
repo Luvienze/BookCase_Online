@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminSettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_menu_settings"
+            android:layout_width="@dimen/blockedUserMenuWidth"
+            android:layout_height="@dimen/blockedUserMenuHeight"
+            android:layout_marginStart="@dimen/blockedUserMargin"
+            android:layout_marginTop="@dimen/blockedUserMargin"
+            android:contentDescription="Menu"
+            android:text=""
+            style="@style/MenuButton"
+            app:cornerRadius="@dimen/blockedUserCornerRadius"
+            app:icon="@drawable/ic_right_arrow"
+            app:iconGravity="textEnd"
+            app:iconPadding="@dimen/dimenZero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/menuMarginEnd"
+            android:text="@string/ayarlar"
+            style="@style/NormalText"
+            android:textSize="@dimen/adminLoginLblTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/adminLoginTextPasswordMarginTop"
+            android:layout_marginTop="@dimen/adminSettingsMarginTop"
+            android:layout_marginEnd="@dimen/adminLoginTextPasswordMarginTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- AutoCompleteTextView ile temayı seç -->
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@dimen/adminProgressBarWeight"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/ic_theme"
+                style="@style/Tema_tint"
+                android:inputType="none"
+                android:paddingTop="@dimen/blockedUserPadding"
+                android:paddingBottom="@dimen/blockedUserPadding"
+                android:text="@string/selectTheme" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/adminSettingsMargin"
+            android:layout_marginBottom="@dimen/adminSettingsMargin"
+            style="@style/NormalText"
+            android:text="@string/version"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/adminSettingsIconWidth"
+            android:layout_height="@dimen/adminSettingsIconHeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintVertical_bias="0.328"
+            app:srcCompat="@drawable/wp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/innerMargin"
+            android:layout_marginEnd="@dimen/innerMargin"
+            android:layout_marginTop="@dimen/innerMargin"
+            style="@style/NormalText"
+            android:text="Düzce Üniversitesi Bilgisayar Müh. BM443 Dersi İçin Geliştirilen Proje Uygulaması"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/ng_slide"
+        style="@style/NavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/admin_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

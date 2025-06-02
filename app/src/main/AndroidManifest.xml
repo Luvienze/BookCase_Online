@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DenemeApplication"
+        android:hardwareAccelerated="true"
+        tools:targetApi="31">
+
+        <activity android:name=".admin.AdminMainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+        <!-- HOME -->
+        <activity android:name=".home.SignUpActivity" android:exported="true"></activity>
+
+        <activity android:name=".home.LoginActivity" android:exported="true"></activity>
+
+        <activity android:name=".home.MainActivity" android:exported="true"></activity>
+
+        <activity android:name=".home.BookListActivity" android:exported="true"></activity>
+
+        <activity android:name=".home.BookDetailActivity" android:exported="true"></activity>
+
+        <activity android:name=".home.CartActivity" android:exported="true"></activity>
+
+        <!-- ADMIN -->
+
+        <activity android:name=".admin.AdminLoginActivity" android:exported="true"></activity>
+
+        <activity android:name=".admin.AdminHomeActivity" android:exported="true"></activity>
+
+        <activity android:name=".admin.AdminUsersActivity" android:exported="true"></activity>
+
+        <activity android:name=".admin.AdminBlockedUsersActivity" android:exported="true"></activity>
+
+        <activity android:name=".admin.AdminBookAddActivity" android:exported="true"></activity>
+
+        <activity android:name=".admin.AdminBookEditActivity" android:exported="true"></activity>
+
+        <activity android:name=".admin.AdminSettingsActivity" android:exported="true"></activity>
+
+        <!-- PROFILE -->
+        <activity android:name=".profile.ProfileHomeActivity" android:exported="true"></activity>
+
+        <activity android:name=".profile.ProfileFavoriteBookActivity" android:exported="true"></activity>
+
+        <activity android:name=".profile.ProfileReturnBookActivity" android:exported="true"></activity>
+
+        <activity android:name=".profile.ProfileSettingsActivity" android:exported="true"></activity>
+
+        <activity android:name=".profile.ProfileBookHistory" android:exported="true"></activity>
+
+        <activity android:name=".profile.ProfileEditUserActivity" android:exported="true"></activity>
+
+        <!-- AI -->
+        <activity android:name=".home.AskAIActivity" android:exported="true"></activity>
+    </application>
+
+</manifest>

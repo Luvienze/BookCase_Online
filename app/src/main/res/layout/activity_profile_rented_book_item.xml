@@ -1,0 +1,150 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/itemBooKCartLayoutPadding">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bookList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/itemBookCartElevation"
+        app:cardCornerRadius="@dimen/cornerRadius"
+        app:cardMaxElevation="@dimen/itemBookCartElevation"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        style="@style/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bookCardImg"
+                android:layout_width="@dimen/returnBookImageWidth"
+                android:layout_height="@dimen/returnBookImageHeight"
+                android:layout_marginTop="@dimen/innerMarginTop"
+                android:layout_marginBottom="@dimen/innerMarginTop"
+                android:layout_marginStart="@dimen/margin"
+                android:contentDescription="@string/contentDescriptionOfBookIcon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/textView"/>
+
+            <TextView
+                android:id="@+id/bookCardTitle"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/bookCardImg"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/innerMarginTop"
+                android:text="@string/title"
+                android:textSize="@dimen/itemBookCartTitleTextSize"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/bookCardAuthor"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardTitle"
+                app:layout_constraintLeft_toRightOf="@+id/bookCardImg"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginTop="@dimen/itemBookMarginTop"
+                android:text="@string/author"
+                android:textSize="@dimen/itemBookCartTextSize"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/bookCardISBN"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/margin"
+                android:text="@string/isbn"
+                android:textSize="@dimen/itemBookISBNTextSize"
+                app:layout_constraintLeft_toRightOf="@id/bookCardImg"
+                app:layout_constraintTop_toBottomOf="@id/bookCardAuthor"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/lblRentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/margin"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardISBN"
+                app:layout_constraintLeft_toRightOf="@id/bookCardImg"
+                android:text="@string/profileRentedBookRentDate"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/rentedBookDateTextSize"/>
+
+            <TextView
+                android:id="@+id/bookCardRentDate"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/margin"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardISBN"
+                app:layout_constraintLeft_toRightOf="@id/lblRentDate"
+                android:text="@string/profileRentedBookRentDate"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/rentedBookDateTextSize"/>
+
+            <TextView
+                android:id="@+id/lblReturnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/margin"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardRentDate"
+                app:layout_constraintLeft_toRightOf="@id/bookCardImg"
+                android:text="@string/profileRentedBookReturnDate"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/rentedBookDateTextSize"/>
+
+            <TextView
+                android:id="@+id/bookCardReturnDate"
+                android:layout_width="@dimen/dimenZero"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop"
+                android:layout_marginStart="@dimen/margin"
+                app:layout_constraintTop_toBottomOf="@+id/bookCardRentDate"
+                app:layout_constraintLeft_toRightOf="@id/lblReturnDate"
+                android:text="@string/profileRentedBookReturnDate"
+                style="@style/textView"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/rentedBookDateTextSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRefundBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/itemBookMarginBottom"
+                android:layout_marginEnd="@dimen/margin"
+                android:text="@string/returnBook"
+                style="@style/SubmitButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

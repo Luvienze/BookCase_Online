@@ -1,0 +1,219 @@
+<resources>
+    <!-- MARGIN -->
+    <dimen name="marginTop">10dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="marginBottom">10dp</dimen>
+    <!-- INNER MARGIN -->
+    <dimen name="innerMarginTop">20dp</dimen>
+    <dimen name="innerMargin">20dp</dimen>
+    <dimen name="innerMarginBottom">20dp</dimen>
+    <!-- SIGN UP PAGE -->
+    <dimen name="header">30sp</dimen>
+    <dimen name="datePicker">100dp</dimen>
+    <dimen name="radioButton">80dp</dimen>
+    <!-- LOGIN PAGE -->
+    <dimen name="loginBookIconWidth">300dp</dimen>
+    <dimen name="loginBookIconHeight">200dp</dimen>
+    <dimen name="loginTextSize">20sp</dimen>
+    <dimen name="loginGapBetweenImage">50dp</dimen>
+    <dimen name="loginButtonWidth">180dp</dimen>
+    <dimen name="loginTextViewMarginTop">13dp</dimen>
+    <!-- MAIN PAGE-->
+    <dimen name="appIconWidth">130dp</dimen>
+    <dimen name="appIconHeight">60dp</dimen>
+    <dimen name="searchBoxGapWithBtn">70dp</dimen>
+    <!-- SEARCH BOX-->
+    <dimen name="boxCornerRadiusTopStart">8dp</dimen>
+    <dimen name="boxCornerRadiusBottomStart">8dp</dimen>
+    <dimen name="boxCornerRadiusTopEnd">8dp</dimen>
+    <dimen name="boxCornerRadiusBottomEnd">8dp</dimen>
+    <!-- SEARCH ICON-->
+    <dimen name="searchIconWidth">40dp</dimen>
+    <dimen name="searchIconHeight">35dp</dimen>
+    <!-- RECYCLER VIEW-->
+    <dimen name="recyclerViewPadding">8dp</dimen>
+    <dimen name="recyclerViewMargin">190dp</dimen>
+    <dimen name="recyclerViewPaddingBottom">16dp</dimen>
+    <dimen name="layoutEditor">3dp</dimen>
+    <!-- VIEW PAGER-->
+    <dimen name="viewPagerHeight">300dp</dimen>
+    <dimen name="cardElevation">8dp</dimen>
+    <dimen name="cornerRadius">8dp</dimen>
+    <dimen name="maxElevation">12dp</dimen>
+    <!-- MAIN ACTIVITY CARDS-->
+    <dimen name="cardTextSize">14sp</dimen>
+    <dimen name="marginTopForText">30dp</dimen>
+    <dimen name="btnWidth">150dp</dimen>
+    <dimen name="btnHeight">40</dimen>
+    <!-- EDIT INPUT TEXT -->
+    <dimen name="editInputTextMinHeight">48dp</dimen>
+    <dimen name="editInputTextPadding">12dp</dimen>
+    <dimen name="editInputTextPaddingTop">16dp</dimen>
+    <!-- FAB -->
+    <dimen name="fabElevation">7dp</dimen>
+    <!-- ITEM BOOK -->
+    <dimen name="itemBookLayoutPadding">10dp</dimen>
+    <dimen name="itemBookCardElevation">5dp</dimen>
+    <dimen name="itemBookImageWidth">140dp</dimen>
+    <dimen name="itemBookImageHeight">220dp</dimen>
+    <dimen name="itemBookTextMarginTop">30dp</dimen>
+    <dimen name="itemBookTitleTextSize">18dp</dimen>
+    <dimen name="itemBookMarginTop">5dp</dimen>
+    <dimen name="itemBookMarginBottom">5dp</dimen>
+    <dimen name="itemBookISBNTextSize">10sp</dimen>
+    <!-- BTN ADD TO CART -->
+    <dimen name="btnMarginBottom">30dp</dimen>
+    <!-- ITEM BOOK DETAIL-->
+    <dimen name="itemBookDetailWidth">200dp</dimen>
+    <dimen name="itemBookDetailHeight">300dp</dimen>
+    <dimen name="itemBookDetailCardElevation">5dp</dimen>
+    <dimen name="itemBookDetailCardTextPadding">15dp</dimen>
+    <dimen name="itemBookDetailCardPadding">10dp</dimen>
+    <dimen name="itemBookDetailMargin">5dp</dimen>
+    <!-- CATEGORIES-->
+    <dimen name="categoryPadding">8dp</dimen>
+    <dimen name="categoryTextSize">14sp</dimen>
+    <dimen name="categoryLayoutMarginEnd">8dp</dimen>
+    <!-- ITEM BOOK CART-->
+    <dimen name="itemBooKCartLayoutPadding">10dp</dimen>
+    <dimen name="itemBookCartElevation">5dp</dimen>
+    <dimen name="itemBookCartImageWidth">60dp</dimen>
+    <dimen name="itemBookCartImageHeight">80dp</dimen>
+    <dimen name="itemBookCartTitleTextSize">17sp</dimen>
+    <dimen name="itemBookCartTextSize">14sp</dimen>
+    <!-- CART -->
+    <dimen name="cartTitleHeight">120dp</dimen>
+    <dimen name="cartElevation">10dp</dimen>
+    <dimen name="carTitleTextSize">35sp</dimen>
+    <dimen name="cartTitleMarginTop">15dp</dimen>
+    <dimen name="cartAppIconMargin">120dp</dimen>
+    <dimen name="cartCardViewElevation">8dp</dimen>
+    <dimen name="cartCardTitleTextSize">20sp</dimen>
+    <dimen name="cartRecyclerViewPaddingBottom">16dp</dimen>
+    <dimen name="cartCardTextViewHeight">50dp</dimen>
+    <dimen name="cartCardTextTitleTextSize">18sp</dimen>
+    <!-- RETURN ICON -->
+    <dimen name="returnIconWidth">50dp</dimen>
+    <dimen name="returnIconHeight">50dp</dimen>
+    <dimen name="cartTitleCardHeight">120dp</dimen>
+    <dimen name="cartTitleTextSize">30sp</dimen>
+    <dimen name="cartCartTextMarginTop">60dp</dimen>
+    <dimen name="cardViewWidth">170dp</dimen>
+    <dimen name="cardViewHeight">200dp</dimen>
+    <!-- FAVORITE ICON-->
+    <dimen name="favoriteWidth">50dp</dimen>
+    <dimen name="favoriteHeight">40dp</dimen>,
+    <dimen name="favorite_ItemBook">35dp</dimen>
+    <!-- PROFILE -->
+    <dimen name="welcomeUser">20sp</dimen>
+    <dimen name="profileAppIconHeight">100dp</dimen>
+    <dimen name="profileTextSize">17sp</dimen>
+    <dimen name="profileCardWidth">300dp</dimen>
+    <dimen name="profileCardHeight">200dp</dimen>
+    <dimen name="profileReturnIconMargin">20dp</dimen>
+    <dimen name="profileButtonWidth">280dp</dimen>
+    <dimen name="profileButtonHeight">60dp</dimen>
+    <dimen name="profileEditIConWidth">50dp</dimen>
+    <dimen name="profileEditIConHeight">50dp</dimen>
+    <!-- PROFILE FAVORITE BOOKS-->
+    <dimen name="profileCardLblTitle">30sp</dimen>
+    <dimen name="favoriteBookRecyclerViewMarginTop">200dp</dimen>
+    <!-- PROFILE EDIT USERS -->
+    <dimen name="profileEditTextWidth">300dp</dimen>
+    <dimen name="profileDateMargin">55dp</dimen>
+    <!--PROFILE RENTED BOOK LIST -->
+    <dimen name="returnBookIconMargin">15dp</dimen>
+    <dimen name="returnBookImageWidth">100dp</dimen>
+    <dimen name="returnBookImageHeight">160dp</dimen>
+    <dimen name="rentedBookCardHeight">80dp</dimen>
+    <dimen name="rentedBookDateTextSize">13sp</dimen>
+    <!-- PROGRESS BAR-->
+    <dimen name="progressBarWidth">40dp</dimen>
+    <dimen name="progressBarHeight">40dp</dimen>
+    <!-- AI -->
+    <dimen name="dimenZero">0dp</dimen>
+    <dimen name="aiCardViewMarginTop">80dp</dimen>
+    <dimen name="aiTextViewSize">16sp</dimen>
+    <dimen name="aiPadding">8dp</dimen>
+    <dimen name="aiImageButtonSize">40dp</dimen>
+    <dimen name="aiImageButtonMargin">16dp</dimen>
+    <!--SETTINGS -->
+    <dimen name="lblSettingsTxtSize">24sp</dimen>
+    <dimen name="themeDialogMargin">40dp</dimen>
+    <dimen name="themeDialogMarginTop">200dp</dimen>
+    <dimen name="themeIconPadding">16dp</dimen>
+    <dimen name="versionMargin">32dp</dimen>
+    <dimen name="settingsAppIconWidth">130dp</dimen>
+
+    <!-- ADMIN BLOCKED USER -->
+    <dimen name="blockedUserMenuWidth">50dp</dimen>
+    <dimen name="blockedUserMenuHeight">50dp</dimen>
+    <dimen name="blockedUserMargin">48dp</dimen>
+    <dimen name="blockedUserPadding">16dp</dimen>
+    <dimen name="blockedUserCornerRadius">16dp</dimen>
+    <dimen name="blockedUserMarginTop">110dp</dimen>
+    <dimen name="blockedUserMarginEnd">16dp</dimen>
+    <dimen name="searchViewWidth">220dp</dimen>
+    <dimen name="searchViewHeight">50dp</dimen>
+    <!-- ADMIN PROGRESS BAR -->
+    <dimen name="adminProgressBarWidth">125dp</dimen>
+    <dimen name="adminProgressBarHeight">123dp</dimen>
+    <dimen name="adminProgressBarWeight">1</dimen>
+    <!-- ADMIN BOOK ADD -->
+    <dimen name="adminBookAddImgWidth">100dp</dimen>
+    <dimen name="adminBookAddImgHeight">100dp</dimen>
+    <dimen name="adminBookAddTextWidth">175dp</dimen>
+    <dimen name="adminBookAddTextHeight">58dp</dimen>
+    <dimen name="adminBookAddMarginStart">176dp</dimen>
+    <dimen name="adminBookAddMarginTop">112dp</dimen>
+    <dimen name="adminBookAddMargin">60dp</dimen>
+    <dimen name="adminBOokAddMarginTopText">12dp</dimen>
+    <dimen name="adminBookInputWidth">140dp</dimen>
+    <dimen name="adminTextPadding">8dp</dimen>
+    <dimen name="adminBookAddDescriptionWidth">290dp</dimen>
+    <dimen name="adminBookAddDescriptionHeight">80dp</dimen>
+    <!-- ADMIN BOOK EDIT -->
+    <dimen name="menuMarginEnd">64dp</dimen>
+    <dimen name="adminBookEditImgMarginTop">128dp</dimen>
+    <dimen name="spinnerWidth">290dp</dimen>
+    <dimen name="spinnerMarginVertical">8dp</dimen>
+    <dimen name="spinnerMarginBottom">96dp</dimen>
+    <dimen name="adminBookEditButtonMargin">160dp</dimen>
+    <dimen name="adminBookEditButtonMarginTop">236dp</dimen>
+    <!-- ADMIN HOME -->
+    <dimen name="adminHomeMarginTop">110dp</dimen>
+    <!-- ADMIN LOGIN -->
+    <dimen name="adminLoginImgWidth">296dp</dimen>
+    <dimen name="adminLoginImgHeight">303dp</dimen>
+    <dimen name="adminLoginMarginTop">4dp</dimen>
+    <dimen name="adminLoginTextWidth">306dp</dimen>
+    <dimen name="adminLoginTextHeight">58dp</dimen>
+    <dimen name="adminLoginTextMarginTop">304dp</dimen>
+    <dimen name="adminLoginTextPasswordMarginTop">40dp</dimen>
+    <dimen name="adminLoginButtonMarginTop">100dp</dimen>
+    <dimen name="adminLoginCheckBoxMargin">52dp</dimen>
+    <dimen name="adminLoginLblMarginTop">256dp</dimen>
+    <dimen name="adminLoginLblTextSize">24sp</dimen>
+    <dimen name="adminSettingsMarginTop">200dp</dimen>
+    <!-- ADMIN SETTINGS -->
+    <dimen name="adminSettingsMargin">32dp</dimen>
+    <dimen name="adminSettingsIconWidth">279dp</dimen>
+    <dimen name="adminSettingsIconHeight">126dp</dimen>
+    <!-- ADMIN CARD BOOKS -->
+    <dimen name="adminCardBookHeight">120dp</dimen>
+    <dimen name="adminCardBooksMargin">3dp</dimen>
+    <dimen name="adminCardMarginStart">24dp</dimen>
+    <dimen name="adminCardMarginTop">19dp</dimen>
+    <dimen name="adminCardTextSize">20sp</dimen>
+    <dimen name="adminCardMarginBottom">16dp</dimen>
+    <dimen name="adminCardMarginBottomText">20dp</dimen>
+    <dimen name="adminCardMarginTextMarginTop">4dp</dimen>
+    <!-- ADMIN CARD USER -->
+    <dimen name="adminCardUserLayoutHeight">140dp</dimen>
+    <dimen name="adminCardUserCardMargin">3dp</dimen>
+    <dimen name="adminCardUserTextViewMargin">75dp</dimen>
+    <dimen name="adminCardUserTextViewMarginTop">5dp</dimen>
+    <!-- ADMIN DROP DOWN THEME -->
+    <dimen name="dropDownThemePadding">14dp</dimen>
+    <dimen name="dropDownThemeTextSize">16sp</dimen>
+</resources>
